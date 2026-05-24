@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicias Divinas | Repostería Artesanal</title>
+  <meta name="description" content="Delicias Divinas — Pasteles, postres y gelatinas artesanales hechos con amor. Pedidos por WhatsApp." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo1.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo1.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Decorative Particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div id="overlay"></div>
+
+  <header>
+    <div class="header-top">
+      <div class="header-left">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="logo-container">
+        <img src="assets/images/logo1.png" alt="Delicias Divinas Logo" class="logo" />
+      </div>
+      <div class="lang-container">
+        <button id="lang-switch" class="lang-btn" data-lang="es">
+          <i class="fa-solid fa-globe"></i> EN
+        </button>
+      </div>
+    </div>
+    <nav>
+      <ul class="navbar" id="navbar">
+        <li><a href="#carrusel" class="active" data-es="INICIO" data-en="HOME"><i class="fa-solid fa-house"></i> <span>INICIO</span></a></li>
+        <li><a href="#pasteles" data-es="MENÚ" data-en="MENU"><i class="fa-solid fa-cake-candles"></i> <span>MENÚ</span></a></li>
+        <li><a href="#miFormulario" data-es="CONTACTO" data-en="CONTACT"><i class="fa-solid fa-envelope"></i> <span>CONTACTO</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="slider-wrapper" id="carrusel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video autoplay muted loop playsinline disablePictureInPicture class="video-slide">
+              <source src="assets/video/video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide"><img src="assets/images/gelatina3.png" alt="Postre"></div>
+          <div class="swiper-slide"><img src="assets/images/pastel3.png" alt="Postre"></div>
+          <div class="swiper-slide"><img src="assets/images/gelatina8.png" alt="Postre"></div>
+          <div class="swiper-slide"><img src="assets/images/postre5.png" alt="Postre"></div>
+          <div class="swiper-slide"><img src="assets/images/gelatina7.png" alt="Postre"></div>
+          <div class="swiper-slide"><img src="assets/images/pastel1.png" alt="Postre"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+
+      <!-- ============ PASTELES ============ -->
+      <section class="section animate-on-scroll">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-cake-candles section-icon"></i> <span data-es="Pasteles" data-en="Cakes">Pasteles</span></h2>
+          <div class="nav-arrows">
+            <button class="nav-btn" data-prev="pasteles" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-btn" data-next="pasteles" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="carousel" id="pasteles">
+
+          <article class="card">
+            <div class="media"><img alt="Pastel de mango" src="assets/images/pastel1.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel rollo de mango" data-en="Mango Roll Cake">Pastel rollo de mango</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Pastel rollo de mango combina la suavidad del merengue con la textura inconfundible del queso Philadelphia y abundante mango!" data-en="Our Mango Roll Cake combines the softness of meringue with the unmistakable texture of Philadelphia cream cheese and plenty of mango!">Nuestro Pastel rollo de mango combina la suavidad del merengue con la textura inconfundible del queso Philadelphia y abundante mango!</p>
+                <ul>
+                  <li data-es="Tamaño: 11 pulgadas" data-en="Size: 11 inches">Tamaño: 11 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$35 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel churro" src="assets/images/pastel.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel Churro Chessecake" data-en="Churro Cheesecake">Pastel Churro Chessecake</span>
+              <div class="extra-info">
+                <p data-es="Fusiona la cremosidad del cheesecake con la esencia dorada y crujiente de un churro. Decorado artesanalmente con líneas de Nutella y una corona de fresas frescas" data-en="Fuses the creaminess of cheesecake with the golden, crispy essence of a churro. Artfully decorated with Nutella drizzle and a crown of fresh strawberries">Fusiona la cremosidad del cheesecake con la esencia dorada y crujiente de un churro. Decorado artesanalmente con líneas de Nutella y una corona de fresas frescas</p>
+                <ul>
+                  <li data-es="Tamaño: Redondo 8 pulgadas" data-en="Size: Round 8 inches">Tamaño: Redondo 8 pulgadas  </li>
+                  <li data-es="Tamaño: Rectangular 9*13 pulgadas" data-en="Size: Rectangular 9*13 inches">Tamaño: Rectangular 9*13 pulgadas </li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$45/55 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel chocolate" src="assets/images/pastel2.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Paste triple chocolate" data-en="Triple Chocolate Cake">Paste triple chocolate</span>
+              <div class="extra-info">
+                <p data-es="Déjate sorprender por nuestro Pastel Triple Chocolate, una experiencia intensa para los amantes del cacao. Recubierto con un delicado acabado de merengue y coronado con una fresa fresca" data-en="Be amazed by our Triple Chocolate Cake, an intense experience for cocoa lovers. Covered with a delicate meringue finish and crowned with a fresh strawberry">Déjate sorprender por nuestro Pastel Triple Chocolate, una experiencia intensa para los amantes del cacao. Recubierto con un delicado acabado de merengue y coronado con una fresa fresca</p>
+                <ul>
+                  <li data-es="Tamaño: 8 pulgadas" data-en="Size: 8 inches">Tamaño: 8 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$35 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel sandia" src="assets/images/pastel3.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel de Sandia con Frutas" data-en="Watermelon Fruit Cake">Pastel de Sandia con Frutas</span>
+              <div class="extra-info">
+                <p data-es="Este postre es ideal para el verano. Incluye sandía fresca de temporada, fresas, uvas y moras. ¡Es 100% natural!" data-en="This dessert is perfect for summer. Includes fresh seasonal watermelon, strawberries, grapes and blackberries. It's 100% natural!">Este postre es ideal para el verano. Incluye sandía fresca de temporada, fresas, uvas y moras. ¡Es
+                  100% natural!</p>
+              </div>
+              <div class="price-container">
+                <span class="price">$50 usd </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel Oreo" src="assets/images/pastel4.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel de Oreo" data-en="Oreo Cake">Pastel de Oreo</span>
+              <div class="extra-info">
+                <p data-es="Pastel con una crujiente base de galleta Oreo combinada con la suavidad del queso crema y chantilly. Todo cubierto por una vibrante corona de fresas frescas que crean el equilibrio perfecto entre lo dulce y lo frutal" data-en="Cake with a crunchy Oreo cookie base combined with the softness of cream cheese and chantilly. All covered by a vibrant crown of fresh strawberries creating the perfect balance between sweet and fruity">Pastel con una crujiente base de galleta Oreo combinada con la suavidad del queso crema y chantilly. Todo cubierto por una vibrante corona de fresas frescas que crean el equilibrio perfecto entre lo dulce y lo frutal</p>
+                <ul>
+                  <li data-es="Tamaño: 10 pulgadas" data-en="Size: 10 inches">Tamaño: 10 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$46 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pecanpie" src="assets/images/pastel5.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pay de Nuez" data-en="Pecan Pie">Pay de Nuez</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de nuestro Pay de Nuez artesanal, elaborado con una base de pie crust perfectamente dorada y un relleno generoso de nuez picada seleccionada." data-en="Enjoy our artisan Pecan Pie, made with a perfectly golden pie crust base and a generous filling of selected chopped pecans.">Disfruta de nuestro Pay de Nuez artesanal, elaborado con una base de pie crust perfectamente dorada y un relleno generoso de nuez picada seleccionada. </p>
+                <ul>
+                  <li data-es="Tamaño: 9 pulgadas" data-en="Size: 9 inches">Tamaño: 9 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$20 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Chocoflan" src="assets/images/pastel6.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Chocoflan" data-en="Chocoflan">Chocoflan</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Chocoflan combina la intensidad de un pastel de chocolate con la suavidad sedosa de un flan. Decorado con un topping a tu elección" data-en="Our Chocoflan combines the intensity of a chocolate cake with the silky smoothness of flan. Decorated with a topping of your choice">Nuestro Chocoflan combina la intensidad de un pastel de chocolate con la suavidad sedosa de un flan. Decorado con un topping a tu elección </p>
+                <ul>
+                  <li data-es="Tamaño: 8 pulgadas" data-en="Size: 8 inches">Tamaño: 8 pulgadas</li>
+                  <li data-es="Topping: Fruta a leccion" data-en="Topping: Fruit of your choice">Topping: Fruta a leccion</li>
+                  <li data-es="Topping: Nutella" data-en="Topping: Nutella">Topping: Nutella</li>
+                  <li data-es="Topping: Merengue" data-en="Topping: Meringue">Topping: Merengue</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$55 usd </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel de frutas ralladas" src="assets/images/pastel7.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel de frutas ralladas" data-en="Shredded Fruit Cake">Pastel de frutas ralladas</span>
+              <div class="extra-info">
+                <p data-es="Nuestra versión saludable y divertida de un pastel: elaborado con una base refrescante de zanahoria, pepino y jícama rallada. Coronamos esta delicia con trocitos de mango, chamoy y gomitas picosas!" data-en="Our healthy and fun version of a cake: made with a refreshing base of shredded carrot, cucumber and jicama. We crown this delight with mango bits, chamoy and spicy gummies!">Nuestra versión saludable y divertida de un pastel: elaborado con una base refrescante de zanahoria, pepino y jícama rallada. Coronamos esta delicia con trocitos de mango, chamoy y gomitas picosas!</p>
+                <ul>
+                  <li data-es="Tamaño: 8 pulgadas" data-en="Size: 8 inches">Tamaño: 8 pulgadas </li>
+                  <li data-es="Ingredientes: Fruta natural seleccionada." data-en="Ingredients: Selected natural fruit.">Ingredientes: Fruta natural seleccionada.</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$40 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel de Mango" src="assets/images/pastel8.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel de Mango" data-en="Mango Cake">Pastel de Mango</span>
+              <div class="extra-info">
+                <p data-es="Nuestro pastel es un sueño para los amantes del mango. Relleno de una mezcla suave de queso crema y mango" data-en="Our cake is a dream for mango lovers. Filled with a smooth blend of cream cheese and mango">Nuestro pastel es un sueño para los amantes del mango. Relleno de una mezcla suave de queso crema y mango</p>
+                <ul>
+                  <li data-es="Tamaño: 9 pulgadas" data-en="Size: 9 inches">Tamaño: 9 pulgadas</li>
+                  <li data-es="Ingredientes: Fruta natural seleccionada." data-en="Ingredients: Selected natural fruit.">Ingredientes: Fruta natural seleccionada.</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$120 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Rollo de fresas" src="assets/images/pastel9.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Rollo de Fresas" data-en="Strawberry Roll">Rollo de Fresas</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Pastel Rollo de Fresas es la fusión definitiva de sabores. Con una base suave y un relleno cremoso de queso crema y fresas" data-en="Our Strawberry Roll Cake is the ultimate fusion of flavors. With a soft base and a creamy filling of cream cheese and strawberries">Nuestro Pastel Rollo de Fresas es la fusión definitiva de sabores. Con una base suave y un relleno cremoso de queso crema y fresas</p>
+                <ul>
+                  <li data-es="Tamaño: 11 pulgadas" data-en="Size: 11 inches">Tamaño: 11 pulgadas </li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$35 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel de tres leches" src="assets/images/pastel10.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel de tres leches" data-en="Tres Leches Cake">Pastel de tres leches</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de nuestro Pastel Plancha de tres leches, con una textura perfectamente húmeda y un dulzor equilibrado. Lo mejor es que tú decides el sabor: viene con un relleno de frutas a tu elección" data-en="Enjoy our Tres Leches Sheet Cake, with a perfectly moist texture and balanced sweetness. The best part is you choose the flavor: it comes with a fruit filling of your choice">Disfruta de nuestro Pastel Plancha de tres leches, con una textura perfectamente húmeda y un dulzor equilibrado. Lo mejor es que tú decides el sabor: viene con un relleno de frutas a tu elección</p>
+                <ul>
+                  <li data-es="Tamaño: ///" data-en="Size: ///">Tamaño: /// </li>
+                  <li data-es="Ingredientes: Fruta natural a elegir." data-en="Ingredients: Natural fruit of your choice.">Ingredientes: Fruta natural a elegir.</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$130 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel Rollo de Cajeta" src="assets/images/pastel11.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel Rollo de Cajeta" data-en="Cajeta Roll Cake">Pastel Rollo de Cajeta</span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestro delicioso Pastel Rollo de Cajeta con Nuez, es el equilibrio perfecto entre un bizcocho suave y la intensidad de la cajeta tradicional." data-en="Try our delicious Cajeta Roll Cake with Pecans, it's the perfect balance between a soft sponge cake and the intensity of traditional cajeta.">Prueba nuestro delicioso Pastel Rollo de Cajeta con Nuez, es el equilibrio perfecto entre un bizcocho suave y la intensidad de la cajeta tradicional. </p>
+                <ul>
+                  <li data-es="Tamaño: 11 pulgadas" data-en="Size: 11 inches">Tamaño: 11 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$35 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Cheesecake Tradicional" src="assets/images/pastel12.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Cheesecake Tradicional" data-en="Traditional Cheesecake">Cheesecake Tradicional</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Cheesecake Tradicional es la definición de cremosidad. Elaborado sobre una base crujiente de galleta de vainilla, se puede cubrir con mermelada de fresa o blueberry según tu preferencia. Una experiencia suave y deliciosa, coronada con fruta fresca para el toque final perfecto." data-en="Our Traditional Cheesecake is the definition of creaminess. Made on a crunchy vanilla cookie base, it can be topped with strawberry or blueberry jam according to your preference. A smooth and delicious experience, crowned with fresh fruit for the perfect finishing touch.">Nuestro Cheesecake Tradicional es la definición de cremosidad. Elaborado sobre una base crujiente de galleta de vainilla, se puede cubrir con mermelada de fresa o blueberry según tu preferencia. Una experiencia suave y deliciosa, coronada con fruta fresca para el toque final perfecto.</p>
+                <ul>
+                  <li data-es="Tamaño: 8 pulgadas" data-en="Size: 8 inches">Tamaño: 8 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$45 usd </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel Tradicional" src="assets/images/pastel13.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel Tradicional" data-en="Traditional Cake">Pastel Tradicional</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Pastel Tradicional combina la textura húmeda del bizcocho de tres leches con la elegancia del merengue artesanal. Es la opción ideal para cualquier celebración, permitiéndote elegir tu relleno frutal favorito para una experiencia de sabor única" data-en="Our Traditional Cake combines the moist texture of tres leches sponge with the elegance of artisan meringue. It's the ideal choice for any celebration, allowing you to choose your favorite fruit filling for a unique flavor experience">Nuestro Pastel Tradicional combina la textura húmeda del bizcocho de tres leches con la elegancia del merengue artesanal. Es la opción ideal para cualquier celebración, permitiéndote elegir tu relleno frutal favorito para una experiencia de sabor única</p>
+                <ul>
+                  <li data-es="Tamaño: 8 pulgadas" data-en="Size: 8 inches">Tamaño: 8 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$50 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Biscoff chesecake" src="assets/images/pastel14.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Biscoff chesecake" data-en="Biscoff Cheesecake">Biscoff chesecake</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Biscoff Cheesecake es la experiencia definitiva para los amantes de la galleta caramelizada. Elaborado con una base crujiente y una crema suave, ambas de galleta Biscoff" data-en="Our Biscoff Cheesecake is the ultimate experience for caramelized cookie lovers. Made with a crunchy base and smooth cream, both from Biscoff cookies">Nuestro Biscoff Cheesecake es la experiencia definitiva para los amantes de la galleta caramelizada. Elaborado con una base crujiente y una crema suave, ambas de galleta Biscoff </p>
+                <ul>
+                  <li data-es="Tamaño: 8, 9, 10 pulgadas" data-en="Size: 8, 9, 10 inches">Tamaño: 8, 9, 10 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$55 / 65 / 75 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Mustachon" src="assets/images/pastel15.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Mustachon" data-en="Mustachon">Mustachon</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Mustachon combina una base crujiente de galleta Ritz y nuez picada con la suavidad de nuestra crema especial de chantilly con queso crema. Todo coronado con un diseño espectacular de fresas frescas" data-en="Our Mustachon combines a crunchy Ritz cracker and chopped pecan base with the softness of our special chantilly cream cheese cream. All crowned with a spectacular design of fresh strawberries">Nuestro Mustachon combina una base crujiente de galleta Ritz y nuez picada con la suavidad de nuestra crema especial de chantilly con queso crema. Todo coronado con un diseño espectacular de fresas frescas </p>
+                <ul>
+                  <li data-es="Tamaño: 8 pulgadas" data-en="Size: 8 inches">Tamaño: 8 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$55 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pay de Elote" src="assets/images/pastel16.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pay de Elote" data-en="Corn Pie">Pay de Elote</span>
+              <div class="extra-info">
+                <p data-es="Postre tradicional mexicano, caracterizado por una textura cremosa y densa, similar a un cheesecake, con un sabor natural, dulce y reconfortante a maíz tierno" data-en="Traditional Mexican dessert, characterized by a creamy and dense texture, similar to a cheesecake, with a natural, sweet and comforting fresh corn flavor">Postre tradicional mexicano, caracterizado por una textura cremosa y densa, similar a un cheesecake, con un sabor natural, dulce y reconfortante a maíz tierno</p>
+                <ul>
+                  <li data-es="Tamaño: 8, 9, 10" data-en="Size: 8, 9, 10">Tamaño: 8, 9, 10</li>
+                  <li data-es="Toppings: Cajeta, Nuez" data-en="Toppings: Cajeta, Pecans">Toppings: Cajeta, Nuez</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$20 / 30/ 40 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Pastel de Vainilla" src="assets/images/pastel17.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Pastel de Vainilla" data-en="Vanilla Cake">Pastel de Vainilla</span>
+              <div class="extra-info">
+                <p data-es="El clásico de vainilla elevado a otro nivel! Es una obra maestra de texturas. Relleno con una exquisita crema de almendras y almendra picada, este pastel está recubierto con un delicado acabado de crema chantilly y coronado artísticamente con una flor de fresas frescas" data-en="The classic vanilla elevated to another level! It's a masterpiece of textures. Filled with an exquisite almond cream and chopped almonds, this cake is covered with a delicate chantilly cream finish and artistically crowned with a fresh strawberry flower">El clásico de vainilla elevado a otro nivel! Es una obra maestra de texturas. Relleno con una exquisita crema de almendras y almendra picada, este pastel está recubierto con un delicado acabado de crema chantilly y coronado artísticamente con una flor de fresas frescas </p>
+                <ul>
+                  <li data-es="Tamaño: Grande 8 pulgadas" data-en="Size: Large 8 inches">Tamaño: Grande 8 pulgadas</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$60 usd</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ============ POSTRES ============ -->
+      <section class="section animate-on-scroll">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-cookie-bite section-icon"></i> <span data-es="Postres" data-en="Desserts">Postres</span></h2>
+          <div class="nav-arrows">
+            <button class="nav-btn" data-prev="galletas" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-btn" data-next="galletas" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="carousel" id="galletas">
+
+          <article class="card">
+            <div class="media"><img alt="Empanadas" src="assets/images/postre.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Empanadas Mixtas" data-en="Mixed Empanadas">Empanadas Mixtas</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de nuestras ricas Empanadas Mixtas, elaboradas con una masa suave y azucarada que se deshace en tu boca. Esta selección incluye deliciosos rellenos de cajeta y piña" data-en="Enjoy our delicious Mixed Empanadas, made with a soft, sugary dough that melts in your mouth. This selection includes delicious cajeta and pineapple fillings">Disfruta de nuestras ricas Empanadas Mixtas, elaboradas con una masa suave y azucarada que se deshace en tu boca. Esta selección incluye deliciosos rellenos de cajeta y piña </p>
+                <ul>
+                  <li data-es="Tamaño: Individual / Docena" data-en="Size: Individual / Dozen">Tamaño: Individual / Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$18 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Chessecake" src="assets/images/postre1.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Chessecake de fresas" data-en="Strawberry Cheesecake">Chessecake de fresas</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de la cremosidad inigualable de nuestro Cheesecake de fresas, diseñado para deleitarte de forma personal. Coronada con una mermelada de fresa 100% natural" data-en="Enjoy the unmatched creaminess of our Strawberry Cheesecake, designed to delight you personally. Crowned with 100% natural strawberry jam">Disfruta de la cremosidad inigualable de nuestro Cheesecake de fresas, diseñado para deleitarte de forma personal. Coronada con una mermelada de fresa 100% natural</p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$10 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Chocobrownie" src="assets/images/postre2.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Vaso Chocobrownie" data-en="Chocobrownie Cup">Vaso Chocobrownie</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Vaso Chocobrownie ofrece un intenso sabor a chocolate en cada capa. Disfruta de trozos de brownie húmedo combinados con un suave relleno de nuez, chantilly cremosa y fresas frescas." data-en="Our Chocobrownie Cup offers an intense chocolate flavor in every layer. Enjoy pieces of moist brownie combined with a smooth pecan filling, creamy chantilly and fresh strawberries.">Nuestro Vaso Chocobrownie ofrece un intenso sabor a chocolate en cada capa. Disfruta de trozos de brownie húmedo combinados con un suave relleno de nuez, chantilly cremosa y fresas frescas. </p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$7 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Postre de Mango" src="assets/images/postre3.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Postre de Mango" data-en="Mango Dessert">Postre de Mango</span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestro Postre de Mango: capas de bizcocho esponjoso, queso crema sedoso y trozos de mango natural." data-en="Try our Mango Dessert: layers of fluffy sponge cake, silky cream cheese and natural mango pieces.">Prueba nuestro Postre de Mango: capas de bizcocho esponjoso, queso crema sedoso y trozos de mango natural. </p>
+                <ul>
+                  <li data-es="Tamaño: 12 Docena" data-en="Size: 12 Dozen">Tamaño: 12 Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$45 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Cup Cake" src="assets/images/postre4.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Cup Cake" data-en="Cupcake">Cup Cake</span>
+              <div class="extra-info">
+                <p data-es="Nuestros Cup Cakes son el lienzo ideal para tus antojos. Elige entre nuestras bases de Vainilla, Chocolate, Limón o Red Velvet y combínalas con nuestros toppings premium: merengue de queso crema o un intenso ganache de chocolate.¡Elige tu combinación favorita!" data-en="Our Cupcakes are the ideal canvas for your cravings. Choose from our Vanilla, Chocolate, Lemon or Red Velvet bases and combine them with our premium toppings: cream cheese meringue or an intense chocolate ganache. Choose your favorite combination!">Nuestros Cup Cakes son el lienzo ideal para tus antojos. Elige entre nuestras bases de Vainilla, Chocolate, Limón o Red Velvet y combínalas con nuestros toppings premium: merengue de queso crema o un intenso ganache de chocolate.¡Elige tu combinación favorita! </p>
+                <ul>
+                  <li data-es="Tamaño: 6 Media Docena y 12 Docena" data-en="Size: 6 Half Dozen and 12 Dozen">Tamaño: 6 Media Docena y 12 Docena </li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$14/ 28 usd </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Vaso Gelatina Mosaico" src="assets/images/postre5.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Mosaico" data-en="Mosaic Jelly">Gelatina Mosaico</span>
+              <div class="extra-info">
+                <p data-es="Vaso con cremosa base de leche que envuelve divertidos cubos de gelatina de sabores. Coronada con un toque de crema batida" data-en="Cup with a creamy milk base wrapping fun flavored jelly cubes. Crowned with a touch of whipped cream">Vaso con cremosa base de leche que envuelve divertidos cubos de gelatina de sabores. Coronada con un toque de crema batida </p>
+                <ul>
+                  <li data-es="Tamaño: Vaso de 9 oz" data-en="Size: 9 oz Cup">Tamaño: Vaso de 9 oz</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$6 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Vaso Postre de Limon" src="assets/images/postre6.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Postre de Limon" data-en="Lemon Dessert">Postre de Limon</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de un vaso con capas alternadas de galleta de vainilla y una crema suave con el toque justo de limón" data-en="Enjoy a cup with alternating layers of vanilla cookie and a smooth cream with just the right touch of lemon">Disfruta de un vaso con capas alternadas de galleta de vainilla y una crema suave con el toque justo de limón </p>
+                <ul>
+                  <li data-es="Tamaño: Vaso de 9 oz" data-en="Size: 9 oz Cup">Tamaño: Vaso de 9 oz</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$5 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Churro Chescake" src="assets/images/postre7.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Churro Chescake" data-en="Churro Cheesecake">Churro Chescake</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Churro Cheesecake combina la textura clásica del churro con la cremosidad de un cheesecake tradicional, topping de Nutella y fresa" data-en="Our Churro Cheesecake combines the classic churro texture with the creaminess of a traditional cheesecake, Nutella and strawberry topping">Nuestro Churro Cheesecake combina la textura clásica del churro con la cremosidad de un cheesecake tradicional, topping de Nutella y fresa </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$7 / 45 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Chocobrownie" src="assets/images/postre8.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Chocobrownie" data-en="Chocobrownie">Chocobrownie</span>
+              <div class="extra-info">
+                <p data-es="Rebanada de brownie de chocolate con hilos de chocolate y dulces M&amp;M's" data-en="Chocolate brownie slice with chocolate drizzle and M&amp;M's candies">Rebanada de brownie de chocolate con hilos de chocolate y dulces M&M's </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$6 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Mustachon Individual" src="assets/images/postre9.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Mustachon Individual" data-en="Individual Mustachon">Mustachon Individual</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de esta rebanada de Mustachon,la combinación inigualable de nuestra base horneada de nuez y galleta, que aporta un toque crujiente único en cada bocado. Coronada con una suave capa de crema y fresas frescas picadas" data-en="Enjoy this Mustachon slice, the unmatched combination of our baked pecan and cookie base, bringing a unique crunchy touch in every bite. Crowned with a smooth layer of cream and chopped fresh strawberries">Disfruta de esta rebanada de Mustachon,la combinación inigualable de nuestra base horneada de nuez y galleta, que aporta un toque crujiente único en cada bocado. Coronada con una suave capa de crema y fresas frescas picadas </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada" data-en="Size: Slice">Tamaño: Rebanada</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$450 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Flan" src="assets/images/postre10.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Flan" data-en="Flan">Flan</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de nuestro Flan, elaborado con una receta tradicional que garantiza una textura suave, sedosa y sumamente cremosa. Bañado en un caramelo dorado y decorado con una fresa fresca" data-en="Enjoy our Flan, made with a traditional recipe that guarantees a smooth, silky and extremely creamy texture. Bathed in golden caramel and decorated with a fresh strawberry">Disfruta de nuestro Flan, elaborado con una receta tradicional que garantiza una textura suave, sedosa y sumamente cremosa. Bañado en un caramelo dorado y decorado con una fresa fresca </p>
+                <ul>
+                  <li data-es="Tamaño: Individual / Docena" data-en="Size: Individual / Dozen">Tamaño: Individual / Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$45 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Carlota de Limón" src="assets/images/postre11.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Carlota de Limón" data-en="Lemon Charlotte">Carlota de Limón</span>
+              <div class="extra-info">
+                <p data-es="Disfruta de nuestra Rebanada de Carlota de Limón, un postre clásico elaborado con capas alternadas de galletas de vainilla y una crema suave y refrescante de limón" data-en="Enjoy our Lemon Charlotte Slice, a classic dessert made with alternating layers of vanilla cookies and a smooth, refreshing lemon cream">Disfruta de nuestra Rebanada de Carlota de Limón, un postre clásico elaborado con capas alternadas de galletas de vainilla y una crema suave y refrescante de limón </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada" data-en="Size: Slice">Tamaño: Rebanada </li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$8 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Postre de Mango" src="assets/images/postre12.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Postre de Mango" data-en="Mango Dessert">Postre de Mango</span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestro delicioso Vaso de Mango individual. Con capas perfectas de bizcocho esponjoso, crema suave y cubos de mango natural" data-en="Try our delicious individual Mango Cup. With perfect layers of fluffy sponge cake, smooth cream and natural mango cubes">Prueba nuestro delicioso Vaso de Mango individual. Con capas perfectas de bizcocho esponjoso, crema suave y cubos de mango natural </p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$10 usd</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Cheesecake de Maracuyá" src="assets/images/postre13.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Cheesecake de Maracuyá" data-en="Passion Fruit Cheesecake">Cheesecake de Maracuyá</span>
+              <div class="extra-info">
+                <p data-es="Nuestro Cheesecake de Maracuyá seleccionado sobre una base crujiente de galleta de chocolate, una crema sedosa de queso equilibrada con un brillante glaze de maracuyá natural" data-en="Our Passion Fruit Cheesecake selected on a crunchy chocolate cookie base, a silky balanced cheese cream with a brilliant natural passion fruit glaze">Nuestro Cheesecake de Maracuyá seleccionado sobre una base crujiente de galleta de chocolate,  una crema sedosa de queso equilibrada con un brillante glaze de maracuyá natural </p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price">$7 usd</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ============ GELATINAS ============ -->
+      <section class="section animate-on-scroll">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-droplet section-icon"></i> <span data-es="Gelatinas" data-en="Jellies">Gelatinas</span></h2>
+          <div class="nav-arrows">
+            <button class="nav-btn" data-prev="gelatinas" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-btn" data-next="gelatinas" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="carousel" id="gelatinas">
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Gansito" src="assets/images/gelatina1.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Gansito" data-en="Gansito Jelly">Gelatina Gansito </span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestra Gelatina de Gansito individual. Con su textura cremosa y el toque clásico del Gansito" data-en="Try our individual Gansito Jelly. With its creamy texture and classic Gansito touch">Prueba nuestra Gelatina de Gansito individual. Con su textura cremosa y el toque clásico del Gansito </p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Fresas con Crema" src="assets/images/gelatina2.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Fresas con Crema" data-en="Strawberries & Cream Jelly">Gelatina Fresas con Crema</span>
+              <div class="extra-info">
+                <p data-es="Nuestra Gelatina de Fresas con Crema destaca por su textura suave y sedosa que equilibra la dulzura de la leche con la frescura de la fruta." data-en="Our Strawberries & Cream Jelly stands out for its smooth and silky texture that balances the sweetness of milk with the freshness of fruit.">Nuestra Gelatina de Fresas con Crema destaca por su textura suave y sedosa que equilibra la dulzura de la leche con la frescura de la fruta. </p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Mangonada" src="assets/images/gelatina3.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Mangonada" data-en="Mangonada Jelly">Gelatina Mangonada</span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestra deliciosa Gelatina. Con trozos de mango real y ese acabado picosito de chamoy y tajín," data-en="Try our delicious Jelly. With real mango pieces and that spicy chamoy and tajín finish,">Prueba nuestra deliciosa Gelatina. Con trozos de mango real y ese acabado picosito de chamoy y tajín,</p>
+                <ul>
+                  <li data-es="Tamaño: Individual" data-en="Size: Individual">Tamaño: Individual</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina de Mango" src="assets/images/gelatina4.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina de Mango" data-en="Mango Jelly">Gelatina de Mango</span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestra deliciosa Gelatina de Mango individual. Con su base cremosa y suave crema batida" data-en="Try our delicious individual Mango Jelly. With its creamy base and smooth whipped cream">Prueba nuestra deliciosa Gelatina de Mango individual. Con su base cremosa y suave crema batida </p>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Ferrero" src="assets/images/gelatina5.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Ferrero" data-en="Ferrero Jelly">Gelatina Ferrero</span>
+              <div class="extra-info">
+                <p data-es="Nuestra Gelatina Ferrero es un postre sofisticado diseñado para los amantes del chocolate. Elaborada con una base cremosa de Nutella y auténticos trozos de chocolate Ferrero Rocher," data-en="Our Ferrero Jelly is a sophisticated dessert designed for chocolate lovers. Made with a creamy Nutella base and authentic Ferrero Rocher chocolate pieces,">Nuestra Gelatina Ferrero es un postre sofisticado diseñado para los amantes del chocolate. Elaborada con una base cremosa de Nutella y auténticos trozos de chocolate Ferrero Rocher,</p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Mosaico" src="assets/images/gelatina6.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Mosaico" data-en="Mosaic Jelly">Gelatina Mosaico</span>
+              <div class="extra-info">
+                <p data-es="Nuestra Gelatina de sabores tradicionales esta elaborada con una base de leche cremosa y suave, contiene cubos de gelatina de sabores frutales y esta decorada con un centro de crema y fresas frescas" data-en="Our traditional flavored Jelly is made with a creamy and smooth milk base, contains fruity flavored jelly cubes and is decorated with a center of cream and fresh strawberries">Nuestra Gelatina de sabores tradicionales esta elaborada con una base de leche cremosa y suave, contiene  cubos de gelatina de sabores frutales y esta decorada con un centro de crema y fresas frescas </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Pistache" src="assets/images/gelatina7.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Pistache" data-en="Pistachio Jelly">Gelatina Pistache</span>
+              <div class="extra-info">
+                <p data-es="Nuestra deliciosa Gelatina de Pistache con su color verde vibrante, coronada con elegantes rosetones de crema y fruta natural" data-en="Our delicious Pistachio Jelly with its vibrant green color, crowned with elegant cream rosettes and natural fruit">Nuestra deliciosa Gelatina de Pistache con su color verde vibrante, coronada con elegantes rosetones de crema y fruta natural </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Piña Colada" src="assets/images/gelatina8.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Piña Colada" data-en="Piña Colada Jelly">Gelatina Piña Colada</span>
+              <div class="extra-info">
+                <p data-es="Prueba nuestra Gelatina, con su base cremosa de leche condensada y trozos de gelatina de piña" data-en="Try our Jelly, with its creamy condensed milk base and pineapple jelly pieces">Prueba nuestra Gelatina, con su base cremosa de leche condensada y trozos de gelatina de piña </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Mangonada" src="assets/images/gelatina9.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Mangonada" data-en="Mangonada Jelly">Gelatina Mangonada</span>
+              <div class="extra-info">
+                <p data-es="Elaborada con una base suave de mango y decorada con trozos de mango natural bañados en una mezcla perfecta de chamoy y tajín" data-en="Made with a smooth mango base and decorated with natural mango pieces bathed in a perfect blend of chamoy and tajín">Elaborada con una base suave de mango y decorada con trozos de mango natural bañados en una mezcla perfecta de chamoy y tajín </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Patriotica" src="assets/images/gelatina10.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Patriotica" data-en="Patriotic Jelly">Gelatina Patriotica</span>
+              <div class="extra-info">
+                <p data-es="Diseñada con tres capas impecables que representan el orgullo Mexicano." data-en="Designed with three impeccable layers representing Mexican pride.">Diseñada con tres capas impecables que representan el orgullo Mexicano. </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina encapsulada de durazno" src="assets/images/gelatina11.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina encapsulada de durazno" data-en="Encapsulated Peach Jelly">Gelatina encapsulada de durazno</span>
+              <div class="extra-info">
+                <p data-es="Elaborada con una base de leche, contiene generosos trozos de durazno en su interior. Decorada con rebanadas de durazno fresco y delicadas figuras de gelatina en forma de flor" data-en="Made with a milk base, contains generous peach pieces inside. Decorated with fresh peach slices and delicate flower-shaped jelly figures">Elaborada con una base de leche, contiene generosos trozos de durazno  en su interior. Decorada con rebanadas de durazno fresco y delicadas figuras de gelatina en forma de flor </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina encapsulada de durazno" src="assets/images/gelatina12.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina" data-en="Jelly">Gelatina </span>
+              <div class="extra-info">
+                <p> </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina Fresa Dual" src="assets/images/gelatina13.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina Fresa Dual" data-en="Dual Strawberry Jelly">Gelatina Fresa Dual</span>
+              <div class="extra-info">
+                <p data-es="Elaborada con una suave base de fresa de leche y coronada con una capa cristalina cargada de fresas" data-en="Made with a smooth milk strawberry base and crowned with a crystalline layer loaded with strawberries">Elaborada con una suave base de fresa de leche y coronada con una capa cristalina cargada de fresas </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media"><img alt="Gelatina de 3 Leches" src="assets/images/gelatina14.png" loading="lazy" /></div>
+            <div class="body">
+              <span class="title" data-es="Gelatina de 3 Leches" data-en="Tres Leches Jelly">Gelatina de 3 Leches</span>
+              <div class="extra-info">
+                <p data-es="Ofrece una experiencia única al combinar una base ultra cremosa con una capa superior cristalina de fresa" data-en="Offers a unique experience combining an ultra creamy base with a crystalline strawberry top layer">Ofrece una experiencia única al combinar una base ultra cremosa con una capa superior cristalina de fresa </p>
+                <ul>
+                  <li data-es="Tamaño: Rebanada o Docena" data-en="Size: Slice or Dozen">Tamaño: Rebanada o Docena</li>
+                </ul>
+              </div>
+              <div class="price-container">
+                <span class="price"></span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ============ CONTACT FORM ============ -->
+      <form id="miFormulario">
+        <h2><i class="fa-solid fa-envelope"></i> <span data-es="¡Haz tu pedido!" data-en="Place your order!">¡Haz tu pedido!</span></h2>
+        <div class="form-divider"></div>
+        <div class="campo-grupo">
+          <label for="nombre"><i class="fa-solid fa-user"></i> <span data-es="Nombre:" data-en="Name:">Nombre:</span></label>
+          <input type="text" id="nombre" name="nombre" data-placeholder-es="¿Cómo te llamas?" data-placeholder-en="What's your name?" placeholder="¿Cómo te llamas?" required>
+        </div>
+        <div class="campo-grupo">
+          <label for="mensaje"><i class="fa-solid fa-comment-dots"></i> <span data-es="¿Qué postre se te antojó?:" data-en="Which dessert caught your eye?:">¿Qué postre se te antojó?:</span></label>
+          <textarea id="mensaje" name="mensaje" rows="4" data-placeholder-es="Cuéntanos los detalles..." data-placeholder-en="Tell us the details..." placeholder="Cuéntanos los detalles..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit" data-es="Enviar por WhatsApp" data-en="Send via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> <span>Enviar por WhatsApp</span> <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+    </div>
+
+    <!-- ============ SOCIAL FLOAT ============ -->
+    <div class="social-float">
+      <a href="https://wa.me/14698812229" target="_blank" class="whatsapp" title="WhatsApp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/deliciasdivinas40?igsh=MTZldHM5MDI1MDFmdg==" target="_blank" class="instagram" title="Instagram" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@deliciasdivinas.40.com?_r=1&_t=ZS-96cJZgShPU5" target="_blank" class="tiktok" title="TikTok" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61579824871073" target="_blank" class="facebook" title="Facebook" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <p>© 2025 <strong>Delicias Divinas</strong>. <span data-es="Hecho con amor." data-en="Made with love.">Hecho con amor.</span> <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+  </main>
+
+  <!-- ============ MODAL (Product Detail) ============ -->
+  <div id="productModal" class="modal">
+    <button class="close-modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-image">
+      <img src="" id="modalImg" alt="Producto">
+    </div>
+    <div class="modal-info">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-price-tag">
+        <span id="modalPrice"></span>
+      </div>
+      <button class="modal-action-btn">
+        <i class="fa-brands fa-whatsapp"></i> <span data-es="Pedir por WhatsApp" data-en="Order via WhatsApp">Pedir por WhatsApp</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // ============================================
+    // SWIPER CONFIG
+    // ============================================
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      autoplay: { delay: 5000 }
+    });
+
+    // ============================================
+    // MODAL LOGIC
+    // ============================================
+    const productModal = document.getElementById('productModal');
+    const overlay = document.getElementById('overlay');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const cards = document.querySelectorAll('.card');
+    const whatsappBtn = document.querySelector('.modal-action-btn');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const imgSrc = card.querySelector('img').src;
+        const title = card.querySelector('.title').innerText;
+        const price = card.querySelector('.price').innerText;
+        const fullDesc = card.querySelector('.extra-info') ? card.querySelector('.extra-info').innerText : '';
+
+        document.getElementById('modalImg').src = imgSrc;
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalDesc').innerText = fullDesc;
+        document.getElementById('modalPrice').innerText = price;
+
+        // WhatsApp button for this product
+        whatsappBtn.onclick = () => {
+          const lang = document.getElementById('lang-switch').dataset.lang;
+          const mensaje = lang === 'en'
+            ? `Hello, I'd like to order: ${title}`
+            : `Hola, quiero pedir información sobre: ${title}`;
+          window.open(`https://wa.me/14698812229?text=${encodeURIComponent(mensaje)}`, '_blank');
+        };
+
+        productModal.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeAll() {
+      productModal.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    closeModalBtn.addEventListener('click', closeAll);
+    overlay.addEventListener('click', closeAll);
+
+    // ============================================
+    // CAROUSEL NAVIGATION
+    // ============================================
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.prev || btn.dataset.next;
+        const carousel = document.getElementById(target);
+        if (!carousel) return;
+        const scrollAmount = 290;
+        if (btn.dataset.prev) {
+          carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ============================================
+    // FORM → WHATSAPP
+    // ============================================
+    document.getElementById('miFormulario').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+      if (!nombre || !mensaje) return;
+
+      const lang = document.getElementById('lang-switch').dataset.lang;
+      const fullMessage = lang === 'en'
+        ? `Hello, my name is ${nombre}. ${mensaje}`
+        : `Hola, soy ${nombre}. ${mensaje}`;
+
+      window.open(`https://wa.me/14698812229?text=${encodeURIComponent(fullMessage)}`, '_blank');
+    });
+
+    // ============================================
+    // LANGUAGE TOGGLE (ES/EN)
+    // ============================================
+    const langBtn = document.getElementById('lang-switch');
+
+    // Load saved language
+    const savedLang = localStorage.getItem('dd-lang') || 'es';
+    if (savedLang === 'en') {
+      langBtn.dataset.lang = 'en';
+      switchLanguage('en');
+    }
+
+    langBtn.addEventListener('click', () => {
+      const current = langBtn.dataset.lang;
+      const newLang = current === 'es' ? 'en' : 'es';
+      langBtn.dataset.lang = newLang;
+      localStorage.setItem('dd-lang', newLang);
+      switchLanguage(newLang);
+    });
+
+    function switchLanguage(lang) {
+      const opposite = lang === 'es' ? 'en' : 'es';
+
+      // Update button text
+      langBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ${opposite.toUpperCase()}`;
+
+      // Update all elements with data-es/data-en
+      document.querySelectorAll('[data-es][data-en]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+
+      // Update page title
+      document.title = lang === 'en'
+        ? 'Delicias Divinas | Artisan Bakery'
+        : 'Delicias Divinas | Repostería Artesanal';
+
+      // Update placeholders
+      document.querySelectorAll('[data-placeholder-es][data-placeholder-en]').forEach(el => {
+        el.placeholder = el.dataset[`placeholder${lang === 'es' ? 'Es' : 'En'}`];
+      });
+
+      // Update submit button
+      const submitBtn = document.querySelector('.btn-submit span');
+      if (submitBtn) {
+        submitBtn.textContent = lang === 'en' ? 'Send via WhatsApp' : 'Enviar por WhatsApp';
+      }
+
+      // Update html lang attribute
+      document.documentElement.lang = lang;
+    }
+
+    // ============================================
+    // HAMBURGER MENU
+    // ============================================
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navbar.classList.toggle('open');
+    });
+
+    // Close menu when clicking a link
+    navbar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navbar.classList.remove('open');
+      });
+    });
+
+    // ============================================
+    // SCROLL ANIMATIONS (Intersection Observer)
+    // ============================================
+    const animateObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.animate-on-scroll, .section').forEach(el => {
+      animateObserver.observe(el);
+    });
+
+    // Staggered card animations
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Get all cards in this carousel
+          const carousel = entry.target.closest('.carousel');
+          if (carousel) {
+            const cardsInView = carousel.querySelectorAll('.card');
+            cardsInView.forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.add('card-visible');
+              }, index * 80);
+            });
+          } else {
+            entry.target.classList.add('card-visible');
+          }
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+
+    document.querySelectorAll('.card').forEach(card => {
+      cardObserver.observe(card);
+    });
+
+    // ============================================
+    // ACTIVE NAV LINK ON SCROLL
+    // ============================================
+    const navLinks = document.querySelectorAll('.navbar a');
+    const sections = document.querySelectorAll('#carrusel, #pasteles, #miFormulario');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 200;
+        if (window.pageYOffset >= sectionTop) {
+          current = '#' + section.id;
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
